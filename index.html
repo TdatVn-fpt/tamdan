@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,326 +23,455 @@
     </script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="text-slate-800 selection:bg-slate-200 selection:text-slate-900">
 
-<!-- Navigation -->
-<nav class="fixed top-0 w-full z-50 glass-nav px-6 py-4 flex justify-between items-center transition-all duration-300">
-    <div class="text-xl font-display font-bold tracking-tight text-slate-900 flex items-center gap-2">
-        <i class="ph ph-book-open text-slate-500"></i>
-        <span>Vượt Ngưỡng.</span>
-    </div>
-    <div class="hidden lg:flex space-x-8 font-medium text-sm tracking-wide text-slate-500">
-        <a href="#intro" class="nav-link transition-colors">Lời Mở Đầu</a>
-        <a href="#part1" class="nav-link transition-colors">Vết Sẹo</a>
-        <a href="#part2" class="nav-link transition-colors">Tàng Hình</a>
-        <a href="#part3" class="nav-link transition-colors">Tư Duy</a>
-        <a href="#part4" class="nav-link transition-colors">Công Cụ</a>
-    </div>
-    <a href="#part4" class="bg-slate-900 text-white px-6 py-2.5 rounded-full text-xs uppercase tracking-widest font-semibold hover:bg-slate-800 transition-colors duration-300 btn-tactile">
-        Đọc ngay
-    </a>
-</nav>
-
-<main class="pt-24 pb-32">
-    <!-- HERO / LỜI MỞ ĐẦU -->
-    <section id="intro" class="relative px-6 py-20 md:py-32 overflow-hidden">
-        <!-- Background Image -->
-        <div class="absolute inset-0 z-0 opacity-60 pointer-events-none">
-            <img src="assets/light_botanic_bg_1782411325982.png" alt="Light Botanic" class="w-full h-full object-cover mix-blend-multiply">
-            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#fafafa]/60 to-[#fafafa]"></div>
+    <!-- Navigation -->
+    <nav
+        class="fixed top-0 w-full z-50 glass-nav px-6 py-4 flex justify-between items-center transition-all duration-300">
+        <div class="text-xl font-display font-bold tracking-tight text-slate-900 flex items-center gap-2">
+            <i class="ph ph-book-open text-slate-500"></i>
+            <span>Vượt Ngưỡng.</span>
         </div>
-        
-        <div class="max-w-4xl mx-auto fade-up relative z-10">
-            <div class="inline-flex items-center gap-2 mb-6">
-                <span class="w-8 h-[2px] bg-slate-900"></span>
-                <span class="uppercase tracking-widest text-xs text-slate-500 font-bold">Cẩm nang thực tập</span>
-            </div>
-            <h1 class="text-5xl md:text-7xl font-display font-bold leading-tight text-slate-900 mb-10">
-                Thoát khỏi <br> <span class="text-slate-400">sự tàng hình.</span>
-            </h1>
-            
-            <div class="prose prose-lg text-slate-600 leading-relaxed max-w-3xl">
-                <h3 class="text-2xl font-display font-semibold text-slate-800 mb-6">LỜI MỞ ĐẦU</h3>
-                <p class="mb-6">Chào bạn,</p>
-                <p class="mb-6">Có bao giờ bạn bước vào một môi trường mới—một kỳ thực tập, một dự án nhóm, hay một cuộc họp—và thay vì đặt câu hỏi, bạn chọn cách im lặng vì sợ bị đánh giá? Chúng ta thường gọi đó là sự "an toàn", nhưng thực chất, đó là cách chúng ta tự làm mình trở nên "tàng hình" trong mắt cấp trên và đồng nghiệp.</p>
-                <p class="mb-6">Cẩm nang này không được xây dựng từ những giáo trình khô khan hay lý thuyết trên giấy. Nó được đúc kết từ chính những câu chuyện thật, những "vết sẹo" thật và những bài học kinh nghiệm được chia sẻ đầy tâm huyết bởi các diễn giả trong chương trình "Vượt Ngưỡng".</p>
-                <p class="mb-6">Hãy đọc những trang này như một người bạn đồng hành. Hy vọng rằng sau khi khép lại cẩm nang này, bạn sẽ không còn chọn sự im lặng làm nơi trú ẩn, mà sẽ sẵn sàng "bật sáng" để khẳng định bản thân và khai phá những tiềm năng mà chính bạn cũng chưa từng biết tới.</p>
-                <p class="font-medium italic text-slate-800">Chúc bạn một hành trình thực tập bản lĩnh và đầy ắp trải nghiệm!</p>
+        <div class="hidden lg:flex space-x-8 font-medium text-sm tracking-wide text-slate-500">
+            <a href="#intro" class="nav-link transition-colors">Lời Mở Đầu</a>
+            <a href="#part1" class="nav-link transition-colors">Vết Sẹo</a>
+            <a href="#part2" class="nav-link transition-colors">Tàng Hình</a>
+            <a href="#part3" class="nav-link transition-colors">Tư Duy</a>
+            <a href="#part4" class="nav-link transition-colors">Công Cụ</a>
+        </div>
+        <a href="#part4"
+            class="bg-slate-900 text-white px-6 py-2.5 rounded-full text-xs uppercase tracking-widest font-semibold hover:bg-slate-800 transition-colors duration-300 btn-tactile">
+            Đọc ngay
+        </a>
+    </nav>
+
+    <main class="pt-24 pb-32">
+        <!-- HERO / LỜI MỞ ĐẦU -->
+        <section id="intro" class="relative px-6 py-20 md:py-32 overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0 opacity-60 pointer-events-none">
+                <img src="assets/light_botanic_bg_1782411325982.png" alt="Light Botanic"
+                    class="w-full h-full object-cover mix-blend-multiply">
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#fafafa]/60 to-[#fafafa]"></div>
             </div>
 
-            <!-- Gặp gỡ những người dẫn đường -->
-            <div class="mt-20 minimal-panel p-10 rounded-3xl bg-white fade-up stagger-1 relative overflow-hidden">
-                <!-- Accent Image -->
-                <div class="absolute right-0 top-0 opacity-20 pointer-events-none w-full h-full">
-                    <img src="assets/light_floral_accent_1782411336227.png" alt="Floral Accent" class="w-full h-full object-cover mix-blend-multiply">
-                    <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
+            <div class="max-w-4xl mx-auto fade-up relative z-10">
+                <div class="inline-flex items-center gap-2 mb-6">
+                    <span class="w-8 h-[2px] bg-slate-900"></span>
+                    <span class="uppercase tracking-widest text-xs text-slate-500 font-bold">Cẩm nang thực tập</span>
                 </div>
-                
-                <div class="relative z-10">
-                    <h3 class="text-2xl font-display font-bold text-slate-900 mb-8">Gặp gỡ những người dẫn đường</h3>
-                <p class="text-slate-600 mb-8">Cẩm nang này không chỉ là những trang lý thuyết, mà là sự chắt lọc từ những trải nghiệm thực chiến của những người đã từng vượt qua chính những rào cản mà bạn đang đối mặt.</p>
-                
-                <div class="grid md:grid-cols-2 gap-10">
-                    <div>
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-500"><i class="ph-fill ph-user-circle text-2xl"></i></div>
+                <h1 class="text-5xl md:text-7xl font-display font-bold leading-tight text-slate-900 mb-10">
+                    Thoát khỏi <br> <span class="text-slate-400">sự tàng hình.</span>
+                </h1>
+
+                <div class="prose prose-lg text-slate-600 leading-relaxed max-w-3xl">
+                    <h3 class="text-2xl font-display font-semibold text-slate-800 mb-6">LỜI MỞ ĐẦU</h3>
+                    <p class="mb-6">Chào bạn,</p>
+                    <p class="mb-6">Có bao giờ bạn bước vào một môi trường mới—một kỳ thực tập, một dự án nhóm, hay một
+                        cuộc họp—và thay vì đặt câu hỏi, bạn chọn cách im lặng vì sợ bị đánh giá? Chúng ta thường gọi đó
+                        là sự "an toàn", nhưng thực chất, đó là cách chúng ta tự làm mình trở nên "tàng hình" trong mắt
+                        cấp trên và đồng nghiệp.</p>
+                    <p class="mb-6">Cẩm nang này không được xây dựng từ những giáo trình khô khan hay lý thuyết trên
+                        giấy. Nó được đúc kết từ chính những câu chuyện thật, những "vết sẹo" thật và những bài học kinh
+                        nghiệm được chia sẻ đầy tâm huyết bởi các diễn giả trong chương trình "Vượt Ngưỡng".</p>
+                    <p class="mb-6">Hãy đọc những trang này như một người bạn đồng hành. Hy vọng rằng sau khi khép lại
+                        cẩm nang này, bạn sẽ không còn chọn sự im lặng làm nơi trú ẩn, mà sẽ sẵn sàng "bật sáng" để
+                        khẳng định bản thân và khai phá những tiềm năng mà chính bạn cũng chưa từng biết tới.</p>
+                    <p class="font-medium italic text-slate-800">Chúc bạn một hành trình thực tập bản lĩnh và đầy ắp
+                        trải nghiệm!</p>
+                </div>
+
+                <!-- Gặp gỡ những người dẫn đường -->
+                <div class="mt-20 minimal-panel p-10 rounded-3xl bg-white fade-up stagger-1 relative overflow-hidden">
+                    <!-- Accent Image -->
+                    <div class="absolute right-0 top-0 opacity-20 pointer-events-none w-full h-full">
+                        <img src="assets/light_floral_accent_1782411336227.png" alt="Floral Accent"
+                            class="w-full h-full object-cover mix-blend-multiply">
+                        <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
+                    </div>
+
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-display font-bold text-slate-900 mb-8">Gặp gỡ những người dẫn đường
+                        </h3>
+                        <p class="text-slate-600 mb-8">Cẩm nang này không chỉ là những trang lý thuyết, mà là sự chắt
+                            lọc từ những trải nghiệm thực chiến của những người đã từng vượt qua chính những rào cản mà
+                            bạn đang đối mặt.</p>
+
+                        <div class="grid md:grid-cols-2 gap-10">
                             <div>
-                                <h4 class="font-bold text-slate-900">Chị Dương Thu Hương</h4>
-                                <span class="text-xs font-medium text-slate-500 uppercase tracking-wider">Mentor</span>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-500">
+                                        <i class="ph-fill ph-user-circle text-2xl"></i></div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-900">Chị Dương Thu Hương</h4>
+                                        <span
+                                            class="text-xs font-medium text-slate-500 uppercase tracking-wider">Mentor</span>
+                                    </div>
+                                </div>
+                                <p class="text-slate-600 text-sm leading-relaxed">Với góc nhìn của một người quản lý
+                                    trực tiếp, chị Hương là người giúp bạn "giải mã" kỳ vọng của doanh nghiệp. Chị sẽ
+                                    chỉ cho bạn cách biến sự chủ động và trách nhiệm trong giao tiếp thành điểm cộng lớn
+                                    nhất để "ghi điểm" trong mắt cấp trên.</p>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-500">
+                                        <i class="ph-fill ph-user text-2xl"></i></div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-900">Anh Trần Tiến Long</h4>
+                                        <span
+                                            class="text-xs font-medium text-slate-500 uppercase tracking-wider">Alumni</span>
+                                    </div>
+                                </div>
+                                <p class="text-slate-600 text-sm leading-relaxed">Là người đã từng chọn sự im lặng và
+                                    nếm trải "cái giá" của sự tàng hình, anh Long sẽ chia sẻ những bài học xương máu.
+                                    Những trải nghiệm của anh là minh chứng sống động cho việc dám lên tiếng và đối diện
+                                    với thử thách là con đường duy nhất để trưởng thành nhanh chóng.</p>
                             </div>
                         </div>
-                        <p class="text-slate-600 text-sm leading-relaxed">Với góc nhìn của một người quản lý trực tiếp, chị Hương là người giúp bạn "giải mã" kỳ vọng của doanh nghiệp. Chị sẽ chỉ cho bạn cách biến sự chủ động và trách nhiệm trong giao tiếp thành điểm cộng lớn nhất để "ghi điểm" trong mắt cấp trên.</p>
                     </div>
-                    <div>
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-500"><i class="ph-fill ph-user text-2xl"></i></div>
+                </div>
+        </section>
+
+        <div class="max-w-4xl mx-auto px-6">
+            <hr class="border-slate-200">
+        </div>
+
+        <!-- PHẦN 1 -->
+        <section id="part1" class="px-6 py-24">
+            <div class="max-w-4xl mx-auto">
+                <span class="text-slate-400 font-bold tracking-widest text-sm uppercase mb-4 block fade-up">Phần
+                    1</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-6 fade-up">Bài học từ những
+                    "vết sẹo"</h2>
+                <h3 class="text-xl text-slate-500 mb-12 fade-up">Đánh đổi sự an toàn lấy cơ hội trưởng thành</h3>
+
+                <div class="prose prose-lg text-slate-600 leading-relaxed fade-up">
+                    <p>Khi mới bước chân vào môi trường làm việc, nhiều người tin rằng chỉ cần chăm chỉ hoàn thành nhiệm
+                        vụ được giao là đủ. Nhưng thực tế lại khác. Đôi khi, điều khiến chúng ta bị bỏ lỡ không phải vì
+                        năng lực chưa đủ tốt, mà vì chúng ta đã chọn cách im lặng quá lâu.</p>
+                    <blockquote class="quote-block p-6 my-8 rounded-r-2xl">
+                        <p class="italic text-slate-800 m-0">"Thật ra, trong giai đoạn mới bắt đầu đi làm, đôi lúc mình
+                            cũng có những khoảnh khắc như vậy." – Anh Trần Tiến Long</p>
+                    </blockquote>
+                    <p>Đó là những khoảnh khắc biết mình đang gặp khó khăn nhưng không dám hỏi. Là những lần có ý kiến
+                        nhưng lại chọn giữ trong lòng. Là những lúc loay hoay với vấn đề của riêng mình chỉ vì sợ người
+                        khác đánh giá rằng bản thân chưa đủ giỏi.</p>
+
+                    <h4 class="text-xl font-bold text-slate-900 mt-10 mb-4">3 rào cản tâm lý quen thuộc:</h4>
+                    <div class="space-y-6">
+                        <div class="minimal-panel p-6 rounded-2xl">
+                            <h5 class="font-bold text-slate-900 mb-2">1. Sợ sai vì lo ngại ánh nhìn của người khác</h5>
+                            <p class="text-sm">Chúng ta sợ đặt câu hỏi vì lo rằng câu hỏi đó quá đơn giản. Chúng ta sợ
+                                đưa ra ý kiến vì lo rằng ý kiến đó chưa đủ hay. Chúng ta sợ mắc lỗi vì nghĩ rằng một sai
+                                lầm có thể khiến người khác đánh giá thấp năng lực. Nhưng chính nỗi sợ ấy lại khiến
+                                chúng ta bỏ lỡ cơ hội học hỏi.</p>
+                        </div>
+                        <div class="minimal-panel p-6 rounded-2xl">
+                            <h5 class="font-bold text-slate-900 mb-2">2. Ngại hỏi vì không muốn làm phiền người khác
+                            </h5>
+                            <p class="text-sm">Nhiều bạn trẻ chọn tự xoay sở với mọi khó khăn vì nghĩ rằng việc hỏi quá
+                                nhiều sẽ gây phiền phức. Tuy nhiên, việc chủ động trao đổi khi gặp vướng mắc luôn được
+                                đánh giá cao hơn việc im lặng và để vấn đề kéo dài.</p>
+                        </div>
+                        <div class="minimal-panel p-6 rounded-2xl">
+                            <h5 class="font-bold text-slate-900 mb-2">3. Không biết nên hỏi gì</h5>
+                            <p class="text-sm">Đôi khi chúng ta không im lặng vì thiếu can đảm, mà vì chưa thật sự hiểu
+                                mình đang gặp khó khăn ở đâu. Khi chưa xác định được vấn đề cốt lõi, việc đặt câu hỏi
+                                cũng trở nên khó khăn hơn.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                        <h4 class="text-xl font-bold text-slate-900 mb-4">Bài học được đánh đổi bằng trải nghiệm</h4>
+                        <p class="mb-4">Sau những lần vấp ngã, anh Long nhận ra rằng: <strong>Cái giá lớn nhất của sự im
+                                lặng không nằm ở những sai sót chuyên môn.</strong> Sai sót có thể sửa chữa. Kỹ năng có
+                            thể học hỏi. Kinh nghiệm có thể tích lũy. Nhưng sự im lặng lại âm thầm lấy đi những điều
+                            quan trọng hơn:</p>
+                        <ul class="list-disc pl-5 space-y-2 mb-6">
+                            <li>Cơ hội để người khác nhìn thấy tiềm năng của bạn.</li>
+                            <li>Cơ hội nhận được những góp ý quý giá để phát triển.</li>
+                            <li>Cơ hội xây dựng sự tin tưởng với Mentor và cấp trên.</li>
+                            <li>Cơ hội tạo ra những bước tiến mới trong hành trình nghề nghiệp.</li>
+                        </ul>
+                        <p class="font-medium text-slate-900">Thông điệp gửi gắm: Đừng để nỗi sợ khiến bạn đánh đổi cơ
+                            hội phát triển của chính mình. Dám cất tiếng nói của mình.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="max-w-4xl mx-auto px-6">
+            <hr class="border-slate-200">
+        </div>
+
+        <!-- PHẦN 2 -->
+        <section id="part2" class="px-6 py-24">
+            <div class="max-w-4xl mx-auto">
+                <span class="text-slate-400 font-bold tracking-widest text-sm uppercase mb-4 block fade-up">Phần
+                    2</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-12 fade-up">Giải mã sự tàng
+                    hình</h2>
+
+                <div class="prose prose-lg text-slate-600 leading-relaxed fade-up">
+                    <h3 class="text-2xl font-bold text-slate-900">Tàng hình không phải là ít nói</h3>
+                    <p>Nhiều sinh viên và intern thường nghĩ rằng mình chỉ cần chăm chỉ làm việc là đủ. Tuy nhiên, năng
+                        lực không chỉ nằm ở những gì bạn làm được mà còn nằm ở khả năng giao tiếp, kết nối và thể hiện
+                        giá trị của bản thân.</p>
+                    <p><strong>"Tàng hình" là khi những suy nghĩ, năng lực và tiềm năng của bạn không được nhìn
+                            thấy.</strong></p>
+
+                    <h4 class="text-xl font-bold text-slate-900 mt-10">Những biểu hiện phổ biến</h4>
+                    <div class="grid grid-cols-2 gap-4 my-6">
+                        <div class="flex items-center gap-2"><i class="ph-bold ph-check text-slate-400"></i> <span
+                                class="text-sm">Ngại đặt câu hỏi khi chưa hiểu</span></div>
+                        <div class="flex items-center gap-2"><i class="ph-bold ph-check text-slate-400"></i> <span
+                                class="text-sm">Không dám trình bày quan điểm</span></div>
+                        <div class="flex items-center gap-2"><i class="ph-bold ph-check text-slate-400"></i> <span
+                                class="text-sm">Chỉ làm đúng phần việc được giao</span></div>
+                        <div class="flex items-center gap-2"><i class="ph-bold ph-check text-slate-400"></i> <span
+                                class="text-sm">Không cập nhật tiến độ công việc</span></div>
+                        <div class="flex items-center gap-2"><i class="ph-bold ph-check text-slate-400"></i> <span
+                                class="text-sm">Tự giải quyết khó khăn trong im lặng</span></div>
+                        <div class="flex items-center gap-2"><i class="ph-bold ph-check text-slate-400"></i> <span
+                                class="text-sm">Ngại xin feedback từ Mentor</span></div>
+                    </div>
+
+                    <div class="minimal-panel p-8 rounded-3xl mt-12 bg-white">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4">Góc nhìn từ người quản lý</h3>
+                        <p class="text-lg italic text-slate-500 mb-6">"Intern là giai đoạn vàng để học hỏi"</p>
+                        <p class="mb-4">Theo chị Hương Dương, giai đoạn Intern không phải là giai đoạn để chứng minh
+                            mình biết bao nhiêu. Đây là khoảng thời gian bạn được phép: Chưa hoàn hảo, chưa biết hết mọi
+                            thứ, được mắc lỗi và được đặt câu hỏi. Điều họ quan tâm là: <strong>Bạn học nhanh như thế
+                                nào?</strong></p>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-slate-900 mt-16 mb-6">Hệ quả của sự im lặng</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                            <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2"><i
+                                    class="ph-fill ph-user"></i> Đối với cá nhân</h4>
+                            <ul class="text-sm space-y-2">
+                                <li><strong>Chậm tiến bộ:</strong> Mất nhiều thời gian mò mẫm, lỗi nhỏ thành lỗi lớn.
+                                </li>
+                                <li><strong>Bỏ lỡ cơ hội được nhìn thấy:</strong> Quản lý khó đánh giá tinh thần học hỏi
+                                    và tiềm năng của bạn.</li>
+                                <li><strong>Hệ quả:</strong> Ít cơ hội quan trọng, khó tạo dựng niềm tin.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                            <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2"><i
+                                    class="ph-fill ph-users"></i> Đối với đội nhóm</h4>
+                            <ul class="text-sm space-y-2">
+                                <li><strong>Delay tiến độ:</strong> Khó khăn không báo cáo kịp làm chậm quy trình.</li>
+                                <li><strong>Sai lệch thông tin:</strong> Thiếu trao đổi dẫn đến hiểu sai vấn đề.</li>
+                                <li><strong>Team không kịp hỗ trợ:</strong> Cơ hội hỗ trợ biến mất trong sự im lặng.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <blockquote class="quote-block p-6 mt-12 rounded-r-2xl">
+                        <p class="font-bold text-slate-900 mb-2">Insight quan trọng:</p>
+                        <p class="m-0 text-slate-600">Người quản lý không kỳ vọng Intern biết hết mọi thứ. Điều họ kỳ
+                            vọng là: Biết học. Biết hỏi. Biết giao tiếp. Biết chủ động tìm giải pháp.</p>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <div class="max-w-4xl mx-auto px-6">
+            <hr class="border-slate-200">
+        </div>
+
+        <!-- PHẦN 3 -->
+        <section id="part3" class="px-6 py-24 bg-slate-50">
+            <div class="max-w-4xl mx-auto">
+                <span class="text-slate-400 font-bold tracking-widest text-sm uppercase mb-4 block fade-up">Phần
+                    3</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-12 fade-up">Tư duy của người
+                    bản lĩnh</h2>
+
+                <div class="prose prose-lg text-slate-600 leading-relaxed fade-up">
+                    <p class="text-xl font-medium text-slate-800 mb-10">Người bản lĩnh không phải là người chưa từng sợ
+                        hãi. Người bản lĩnh là người vẫn lựa chọn hành động dù còn sợ.</p>
+
+                    <div class="grid md:grid-cols-2 gap-10 mb-12">
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-4">Chủ động không phải là nói nhiều</h4>
+                            <p class="text-sm">Sự chủ động được thể hiện qua trách nhiệm. Một người chủ động là người
+                                dám hỏi khi chưa hiểu, dám xác nhận lại, dám báo cáo, dám nhận lỗi và dám đề xuất giải
+                                pháp.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-4">Người giỏi không phải là người biết tất cả
+                            </h4>
+                            <p class="text-sm">Những người học nhanh nhất thường là những người sẵn sàng nói: "Em chưa
+                                hiểu phần này", "Em cần được hướng dẫn thêm". Việc thừa nhận mình chưa biết cho thấy bạn
+                                đủ trưởng thành để học hỏi.</p>
+                        </div>
+                    </div>
+
+                    <div class="minimal-panel p-8 rounded-3xl bg-white mb-12">
+                        <h4 class="text-2xl font-bold text-slate-900 mb-4">Sai không đáng sợ bằng giấu sai</h4>
+                        <p>Sai lầm là điều không thể tránh khỏi. Điều khiến một sai lầm trở nên nghiêm trọng không phải
+                            là bản thân lỗi sai, mà là việc để nó tồn tại trong im lặng.</p>
+                        <p class="mt-4 font-medium text-slate-900 bg-slate-100 p-4 rounded-xl">Bài học rút ra: Sai lầm
+                            là chi phí của học tập. Che giấu sai lầm là chi phí của niềm tin.</p>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-slate-900 mt-12 mb-6">3 niềm tin mới thay thế nỗi sợ</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="border-b-2 border-slate-200">
+                                    <th class="pb-4 pt-4 font-bold text-slate-500 w-1/2">Thay vì nghĩ...</th>
+                                    <th class="pb-4 pt-4 font-bold text-slate-900 w-1/2">Hãy nghĩ...</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-sm">
+                                <tr class="border-b border-slate-100">
+                                    <td class="py-4 text-slate-500">Mình hỏi sẽ bị đánh giá.</td>
+                                    <td class="py-4 font-medium text-slate-800">Mình hỏi để học nhanh hơn.</td>
+                                </tr>
+                                <tr class="border-b border-slate-100">
+                                    <td class="py-4 text-slate-500">Mình chưa đủ giỏi để lên tiếng.</td>
+                                    <td class="py-4 font-medium text-slate-800">Mình lên tiếng để trở nên giỏi hơn.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 text-slate-500">Mình sợ mắc lỗi.</td>
+                                    <td class="py-4 font-medium text-slate-800">Mỗi sai lầm là một cơ hội học tập.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHẦN 4 -->
+        <section id="part4" class="px-6 py-24 bg-white border-t border-slate-200">
+            <div class="max-w-4xl mx-auto">
+                <span class="text-slate-400 font-bold tracking-widest text-sm uppercase mb-4 block fade-up">Phần
+                    4</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-12 fade-up">Bộ công cụ thoát
+                    tàng hình</h2>
+
+                <div class="prose prose-lg text-slate-600 leading-relaxed fade-up">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-8">1. Framework 3 bước khi bị "kẹt" (Từ anh Long)
+                    </h3>
+
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <div
+                                class="w-12 h-12 shrink-0 bg-slate-900 text-white rounded-full flex items-center justify-center font-display font-bold text-xl">
+                                1</div>
                             <div>
-                                <h4 class="font-bold text-slate-900">Anh Trần Tiến Long</h4>
-                                <span class="text-xs font-medium text-slate-500 uppercase tracking-wider">Alumni</span>
+                                <h4 class="text-xl font-bold text-slate-900 m-0 mb-2">Hỏi sớm còn hơn sai rồi mới hỏi
+                                </h4>
+                                <p class="text-sm mt-0">Việc giữ một thắc mắc quá lâu có thể dẫn đến hiểu sai yêu cầu,
+                                    thực hiện sai hướng. Một câu hỏi đúng lúc tiết kiệm hàng giờ làm việc. <em>Đừng đợi
+                                        đến khi bế tắc mới hỏi.</em></p>
                             </div>
                         </div>
-                        <p class="text-slate-600 text-sm leading-relaxed">Là người đã từng chọn sự im lặng và nếm trải "cái giá" của sự tàng hình, anh Long sẽ chia sẻ những bài học xương máu. Những trải nghiệm của anh là minh chứng sống động cho việc dám lên tiếng và đối diện với thử thách là con đường duy nhất để trưởng thành nhanh chóng.</p>
+                        <div class="flex gap-6">
+                            <div
+                                class="w-12 h-12 shrink-0 bg-slate-900 text-white rounded-full flex items-center justify-center font-display font-bold text-xl">
+                                2</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-slate-900 m-0 mb-2">Đừng chờ được giao việc, hãy chủ
+                                    động</h4>
+                                <p class="text-sm mt-0">Thay vì ngồi chờ, hãy tự hỏi: Mình có thể hỗ trợ thêm điều gì?
+                                    Sự chủ động giúp học nhanh hơn và được Mentor nhìn thấy nhiều hơn.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div
+                                class="w-12 h-12 shrink-0 bg-slate-900 text-white rounded-full flex items-center justify-center font-display font-bold text-xl">
+                                3</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-slate-900 m-0 mb-2">Tuân thủ quy trình làm việc</h4>
+                                <p class="text-sm mt-0">Nhiều người muốn làm nhanh để chứng minh năng lực. Tuy nhiên,
+                                    tốc độ không thể thay thế quy trình. <em>Làm đúng trước khi làm nhanh.</em></p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <div class="max-w-4xl mx-auto px-6"><hr class="border-slate-200"></div>
+                    <div class="mt-16">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-6">2. NGHỆ THUẬT "HỎI ĐỂ ĐƯỢC TRUST"</h3>
 
-    <!-- PHẦN 1 -->
-    <section id="part1" class="px-6 py-24">
-        <div class="max-w-4xl mx-auto">
-            <span class="text-slate-400 font-bold tracking-widest text-sm uppercase mb-4 block fade-up">Phần 1</span>
-            <h2 class="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-6 fade-up">Bài học từ những "vết sẹo"</h2>
-            <h3 class="text-xl text-slate-500 mb-12 fade-up">Đánh đổi sự an toàn lấy cơ hội trưởng thành</h3>
+                        <h4 class="text-xl font-bold text-slate-800 mb-4">Góc nhìn từ Mentor</h4>
+                        <p class="mb-4">Nhiều bạn trẻ ngại đặt câu hỏi vì sợ bị đánh giá là thiếu năng lực, sợ làm phiền
+                            người khác hoặc sợ bản thân trở nên "phiền phức" trong mắt Mentor.</p>
+                        <p class="mb-8">Tuy nhiên, theo chị Nguyễn Hương Dương, vấn đề không nằm ở việc bạn có hỏi hay
+                            không. <br><strong>Điều quan trọng là bạn hỏi như thế nào.</strong></p>
 
-            <div class="prose prose-lg text-slate-600 leading-relaxed fade-up">
-                <p>Khi mới bước chân vào môi trường làm việc, nhiều người tin rằng chỉ cần chăm chỉ hoàn thành nhiệm vụ được giao là đủ. Nhưng thực tế lại khác. Đôi khi, điều khiến chúng ta bị bỏ lỡ không phải vì năng lực chưa đủ tốt, mà vì chúng ta đã chọn cách im lặng quá lâu.</p>
-                <blockquote class="quote-block p-6 my-8 rounded-r-2xl">
-                    <p class="italic text-slate-800 m-0">"Thật ra, trong giai đoạn mới bắt đầu đi làm, đôi lúc mình cũng có những khoảnh khắc như vậy." – Anh Trần Tiến Long</p>
-                </blockquote>
-                <p>Đó là những khoảnh khắc biết mình đang gặp khó khăn nhưng không dám hỏi. Là những lần có ý kiến nhưng lại chọn giữ trong lòng. Là những lúc loay hoay với vấn đề của riêng mình chỉ vì sợ người khác đánh giá rằng bản thân chưa đủ giỏi.</p>
-                
-                <h4 class="text-xl font-bold text-slate-900 mt-10 mb-4">3 rào cản tâm lý quen thuộc:</h4>
-                <div class="space-y-6">
-                    <div class="minimal-panel p-6 rounded-2xl">
-                        <h5 class="font-bold text-slate-900 mb-2">1. Sợ sai vì lo ngại ánh nhìn của người khác</h5>
-                        <p class="text-sm">Chúng ta sợ đặt câu hỏi vì lo rằng câu hỏi đó quá đơn giản. Chúng ta sợ đưa ra ý kiến vì lo rằng ý kiến đó chưa đủ hay. Chúng ta sợ mắc lỗi vì nghĩ rằng một sai lầm có thể khiến người khác đánh giá thấp năng lực. Nhưng chính nỗi sợ ấy lại khiến chúng ta bỏ lỡ cơ hội học hỏi.</p>
-                    </div>
-                    <div class="minimal-panel p-6 rounded-2xl">
-                        <h5 class="font-bold text-slate-900 mb-2">2. Ngại hỏi vì không muốn làm phiền người khác</h5>
-                        <p class="text-sm">Nhiều bạn trẻ chọn tự xoay sở với mọi khó khăn vì nghĩ rằng việc hỏi quá nhiều sẽ gây phiền phức. Tuy nhiên, việc chủ động trao đổi khi gặp vướng mắc luôn được đánh giá cao hơn việc im lặng và để vấn đề kéo dài.</p>
-                    </div>
-                    <div class="minimal-panel p-6 rounded-2xl">
-                        <h5 class="font-bold text-slate-900 mb-2">3. Không biết nên hỏi gì</h5>
-                        <p class="text-sm">Đôi khi chúng ta không im lặng vì thiếu can đảm, mà vì chưa thật sự hiểu mình đang gặp khó khăn ở đâu. Khi chưa xác định được vấn đề cốt lõi, việc đặt câu hỏi cũng trở nên khó khăn hơn.</p>
-                    </div>
-                </div>
+                        <h4 class="text-xl font-bold text-slate-800 mb-4">Bạn chọn "Im lặng" hay "Hiểu sâu"?</h4>
+                        <p class="mb-4">Trong quá trình làm việc với các bạn sinh viên và intern, chị Hương Dương thường
+                            nhận được câu hỏi:</p>
+                        <blockquote class="quote-block p-4 my-4 rounded-r-xl italic text-slate-700">"Giữa một intern
+                            không hỏi và một intern hỏi để hiểu sâu, chị đánh giá cao ai hơn?"</blockquote>
+                        <p class="mb-4">Câu trả lời của chị rất rõ ràng:</p>
+                        <blockquote class="quote-block p-4 my-4 rounded-r-xl italic font-bold text-slate-900">"Chị sẽ
+                            chọn bạn hỏi để hiểu sâu."</blockquote>
+                        <p class="mb-8">Tuy nhiên, điều đó không có nghĩa là càng hỏi nhiều càng tốt. Trong môi trường
+                            làm việc, giá trị không nằm ở số lượng câu hỏi, mà nằm ở chất lượng của câu hỏi.</p>
 
-                <div class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-100">
-                    <h4 class="text-xl font-bold text-slate-900 mb-4">Bài học được đánh đổi bằng trải nghiệm</h4>
-                    <p class="mb-4">Sau những lần vấp ngã, anh Long nhận ra rằng: <strong>Cái giá lớn nhất của sự im lặng không nằm ở những sai sót chuyên môn.</strong> Sai sót có thể sửa chữa. Kỹ năng có thể học hỏi. Kinh nghiệm có thể tích lũy. Nhưng sự im lặng lại âm thầm lấy đi những điều quan trọng hơn:</p>
-                    <ul class="list-disc pl-5 space-y-2 mb-6">
-                        <li>Cơ hội để người khác nhìn thấy tiềm năng của bạn.</li>
-                        <li>Cơ hội nhận được những góp ý quý giá để phát triển.</li>
-                        <li>Cơ hội xây dựng sự tin tưởng với Mentor và cấp trên.</li>
-                        <li>Cơ hội tạo ra những bước tiến mới trong hành trình nghề nghiệp.</li>
-                    </ul>
-                    <p class="font-medium text-slate-900">Thông điệp gửi gắm: Đừng để nỗi sợ khiến bạn đánh đổi cơ hội phát triển của chính mình. Dám cất tiếng nói của mình.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="max-w-4xl mx-auto px-6"><hr class="border-slate-200"></div>
-
-    <!-- PHẦN 2 -->
-    <section id="part2" class="px-6 py-24">
-        <div class="max-w-4xl mx-auto">
-            <span class="text-slate-400 font-bold tracking-widest text-sm uppercase mb-4 block fade-up">Phần 2</span>
-            <h2 class="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-12 fade-up">Giải mã sự tàng hình</h2>
-
-            <div class="prose prose-lg text-slate-600 leading-relaxed fade-up">
-                <h3 class="text-2xl font-bold text-slate-900">Tàng hình không phải là ít nói</h3>
-                <p>Nhiều sinh viên và intern thường nghĩ rằng mình chỉ cần chăm chỉ làm việc là đủ. Tuy nhiên, năng lực không chỉ nằm ở những gì bạn làm được mà còn nằm ở khả năng giao tiếp, kết nối và thể hiện giá trị của bản thân.</p>
-                <p><strong>"Tàng hình" là khi những suy nghĩ, năng lực và tiềm năng của bạn không được nhìn thấy.</strong></p>
-
-                <h4 class="text-xl font-bold text-slate-900 mt-10">Những biểu hiện phổ biến</h4>
-                <div class="grid grid-cols-2 gap-4 my-6">
-                    <div class="flex items-center gap-2"><i class="ph-bold ph-check text-slate-400"></i> <span class="text-sm">Ngại đặt câu hỏi khi chưa hiểu</span></div>
-                    <div class="flex items-center gap-2"><i class="ph-bold ph-check text-slate-400"></i> <span class="text-sm">Không dám trình bày quan điểm</span></div>
-                    <div class="flex items-center gap-2"><i class="ph-bold ph-check text-slate-400"></i> <span class="text-sm">Chỉ làm đúng phần việc được giao</span></div>
-                    <div class="flex items-center gap-2"><i class="ph-bold ph-check text-slate-400"></i> <span class="text-sm">Không cập nhật tiến độ công việc</span></div>
-                    <div class="flex items-center gap-2"><i class="ph-bold ph-check text-slate-400"></i> <span class="text-sm">Tự giải quyết khó khăn trong im lặng</span></div>
-                    <div class="flex items-center gap-2"><i class="ph-bold ph-check text-slate-400"></i> <span class="text-sm">Ngại xin feedback từ Mentor</span></div>
-                </div>
-
-                <div class="minimal-panel p-8 rounded-3xl mt-12 bg-white">
-                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Góc nhìn từ người quản lý</h3>
-                    <p class="text-lg italic text-slate-500 mb-6">"Intern là giai đoạn vàng để học hỏi"</p>
-                    <p class="mb-4">Theo chị Hương Dương, giai đoạn Intern không phải là giai đoạn để chứng minh mình biết bao nhiêu. Đây là khoảng thời gian bạn được phép: Chưa hoàn hảo, chưa biết hết mọi thứ, được mắc lỗi và được đặt câu hỏi. Điều họ quan tâm là: <strong>Bạn học nhanh như thế nào?</strong></p>
-                </div>
-
-                <h3 class="text-2xl font-bold text-slate-900 mt-16 mb-6">Hệ quả của sự im lặng</h3>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                        <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2"><i class="ph-fill ph-user"></i> Đối với cá nhân</h4>
-                        <ul class="text-sm space-y-2">
-                            <li><strong>Chậm tiến bộ:</strong> Mất nhiều thời gian mò mẫm, lỗi nhỏ thành lỗi lớn.</li>
-                            <li><strong>Bỏ lỡ cơ hội được nhìn thấy:</strong> Quản lý khó đánh giá tinh thần học hỏi và tiềm năng của bạn.</li>
-                            <li><strong>Hệ quả:</strong> Ít cơ hội quan trọng, khó tạo dựng niềm tin.</li>
+                        <h4 class="text-xl font-bold text-slate-800 mb-4">Điều người quản lý thực sự đánh giá</h4>
+                        <p class="mb-4">Nhiều người nghĩ rằng nhà quản lý sẽ đánh giá nhân sự dựa trên việc họ biết bao
+                            nhiêu. Thực tế không hoàn toàn như vậy.</p>
+                        <p class="mb-4">Đặc biệt ở giai đoạn Intern hoặc Fresher, điều các quản lý quan tâm hơn là:</p>
+                        <ul class="list-disc pl-5 space-y-2 mb-4">
+                            <li>Bạn học nhanh đến đâu.</li>
+                            <li>Bạn phản ứng thế nào khi gặp điều chưa biết.</li>
+                            <li>Bạn có chủ động tìm cách giải quyết vấn đề hay không.</li>
                         </ul>
-                    </div>
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                        <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2"><i class="ph-fill ph-users"></i> Đối với đội nhóm</h4>
-                        <ul class="text-sm space-y-2">
-                            <li><strong>Delay tiến độ:</strong> Khó khăn không báo cáo kịp làm chậm quy trình.</li>
-                            <li><strong>Sai lệch thông tin:</strong> Thiếu trao đổi dẫn đến hiểu sai vấn đề.</li>
-                            <li><strong>Team không kịp hỗ trợ:</strong> Cơ hội hỗ trợ biến mất trong sự im lặng.</li>
+                        <p class="mb-8">Đó mới là những yếu tố phản ánh tiềm năng phát triển lâu dài.</p>
+
+                        <h4 class="text-xl font-bold text-slate-800 mb-4">Khi bạn chọn im lặng</h4>
+                        <p class="mb-4">Một intern không đặt câu hỏi có thể không mắc lỗi ngay lập tức. Nhưng về lâu
+                            dài, điều đó lại tạo ra nhiều rào cản vô hình.</p>
+                        <p class="mb-4">Người quản lý sẽ khó đánh giá:</p>
+                        <ul class="list-disc pl-5 space-y-2 mb-4">
+                            <li>Bạn đang hiểu công việc đến đâu.</li>
+                            <li>Bạn đang gặp khó khăn gì.</li>
+                            <li>Bạn có đang đi đúng hướng hay không.</li>
                         </ul>
+                        <p>Và khi không nhìn thấy được quá trình học hỏi...</p>
                     </div>
-                </div>
 
-                <blockquote class="quote-block p-6 mt-12 rounded-r-2xl">
-                    <p class="font-bold text-slate-900 mb-2">Insight quan trọng:</p>
-                    <p class="m-0 text-slate-600">Người quản lý không kỳ vọng Intern biết hết mọi thứ. Điều họ kỳ vọng là: Biết học. Biết hỏi. Biết giao tiếp. Biết chủ động tìm giải pháp.</p>
-                </blockquote>
-            </div>
-        </div>
-    </section>
-
-    <div class="max-w-4xl mx-auto px-6"><hr class="border-slate-200"></div>
-
-    <!-- PHẦN 3 -->
-    <section id="part3" class="px-6 py-24 bg-slate-50">
-        <div class="max-w-4xl mx-auto">
-            <span class="text-slate-400 font-bold tracking-widest text-sm uppercase mb-4 block fade-up">Phần 3</span>
-            <h2 class="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-12 fade-up">Tư duy của người bản lĩnh</h2>
-
-            <div class="prose prose-lg text-slate-600 leading-relaxed fade-up">
-                <p class="text-xl font-medium text-slate-800 mb-10">Người bản lĩnh không phải là người chưa từng sợ hãi. Người bản lĩnh là người vẫn lựa chọn hành động dù còn sợ.</p>
-
-                <div class="grid md:grid-cols-2 gap-10 mb-12">
-                    <div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-4">Chủ động không phải là nói nhiều</h4>
-                        <p class="text-sm">Sự chủ động được thể hiện qua trách nhiệm. Một người chủ động là người dám hỏi khi chưa hiểu, dám xác nhận lại, dám báo cáo, dám nhận lỗi và dám đề xuất giải pháp.</p>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-4">Người giỏi không phải là người biết tất cả</h4>
-                        <p class="text-sm">Những người học nhanh nhất thường là những người sẵn sàng nói: "Em chưa hiểu phần này", "Em cần được hướng dẫn thêm". Việc thừa nhận mình chưa biết cho thấy bạn đủ trưởng thành để học hỏi.</p>
-                    </div>
-                </div>
-
-                <div class="minimal-panel p-8 rounded-3xl bg-white mb-12">
-                    <h4 class="text-2xl font-bold text-slate-900 mb-4">Sai không đáng sợ bằng giấu sai</h4>
-                    <p>Sai lầm là điều không thể tránh khỏi. Điều khiến một sai lầm trở nên nghiêm trọng không phải là bản thân lỗi sai, mà là việc để nó tồn tại trong im lặng.</p>
-                    <p class="mt-4 font-medium text-slate-900 bg-slate-100 p-4 rounded-xl">Bài học rút ra: Sai lầm là chi phí của học tập. Che giấu sai lầm là chi phí của niềm tin.</p>
-                </div>
-
-                <h3 class="text-2xl font-bold text-slate-900 mt-12 mb-6">3 niềm tin mới thay thế nỗi sợ</h3>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-left border-collapse">
-                        <thead>
-                            <tr class="border-b-2 border-slate-200">
-                                <th class="pb-4 pt-4 font-bold text-slate-500 w-1/2">Thay vì nghĩ...</th>
-                                <th class="pb-4 pt-4 font-bold text-slate-900 w-1/2">Hãy nghĩ...</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-sm">
-                            <tr class="border-b border-slate-100">
-                                <td class="py-4 text-slate-500">Mình hỏi sẽ bị đánh giá.</td>
-                                <td class="py-4 font-medium text-slate-800">Mình hỏi để học nhanh hơn.</td>
-                            </tr>
-                            <tr class="border-b border-slate-100">
-                                <td class="py-4 text-slate-500">Mình chưa đủ giỏi để lên tiếng.</td>
-                                <td class="py-4 font-medium text-slate-800">Mình lên tiếng để trở nên giỏi hơn.</td>
-                            </tr>
-                            <tr>
-                                <td class="py-4 text-slate-500">Mình sợ mắc lỗi.</td>
-                                <td class="py-4 font-medium text-slate-800">Mỗi sai lầm là một cơ hội học tập.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PHẦN 4 -->
-    <section id="part4" class="px-6 py-24 bg-white border-t border-slate-200">
-        <div class="max-w-4xl mx-auto">
-            <span class="text-slate-400 font-bold tracking-widest text-sm uppercase mb-4 block fade-up">Phần 4</span>
-            <h2 class="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-12 fade-up">Bộ công cụ thoát tàng hình</h2>
-
-            <div class="prose prose-lg text-slate-600 leading-relaxed fade-up">
-                <h3 class="text-2xl font-bold text-slate-900 mb-8">1. Framework 3 bước khi bị "kẹt" (Từ anh Long)</h3>
-                
-                <div class="space-y-8">
-                    <div class="flex gap-6">
-                        <div class="w-12 h-12 shrink-0 bg-slate-900 text-white rounded-full flex items-center justify-center font-display font-bold text-xl">1</div>
-                        <div>
-                            <h4 class="text-xl font-bold text-slate-900 m-0 mb-2">Hỏi sớm còn hơn sai rồi mới hỏi</h4>
-                            <p class="text-sm mt-0">Việc giữ một thắc mắc quá lâu có thể dẫn đến hiểu sai yêu cầu, thực hiện sai hướng. Một câu hỏi đúng lúc tiết kiệm hàng giờ làm việc. <em>Đừng đợi đến khi bế tắc mới hỏi.</em></p>
+                    <div class="mt-20 text-center">
+                        <h3 class="text-2xl font-display font-bold text-slate-900 mb-6">Lời nhắn gửi cuối cùng</h3>
+                        <p class="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">"Không biết không phải là vấn đề. Không
+                            biết mà không hỏi mới là vấn đề."</p>
+                        <p class="text-slate-500 italic max-w-2xl mx-auto">Bạn không cần phải giỏi ngay từ đầu. Nhưng
+                            bạn cần dám lên tiếng để trở nên giỏi hơn mỗi ngày. Người bản lĩnh không phải là người không
+                            sợ. Người bản lĩnh là người vẫn lựa chọn tiến về phía trước dù còn sợ.</p>
+                        <div
+                            class="mt-10 font-bold text-slate-900 uppercase tracking-widest border-t border-slate-200 pt-8 inline-block">
+                            Dám cất tiếng nói của mình.
                         </div>
-                    </div>
-                    <div class="flex gap-6">
-                        <div class="w-12 h-12 shrink-0 bg-slate-900 text-white rounded-full flex items-center justify-center font-display font-bold text-xl">2</div>
-                        <div>
-                            <h4 class="text-xl font-bold text-slate-900 m-0 mb-2">Đừng chờ được giao việc, hãy chủ động</h4>
-                            <p class="text-sm mt-0">Thay vì ngồi chờ, hãy tự hỏi: Mình có thể hỗ trợ thêm điều gì? Sự chủ động giúp học nhanh hơn và được Mentor nhìn thấy nhiều hơn.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-6">
-                        <div class="w-12 h-12 shrink-0 bg-slate-900 text-white rounded-full flex items-center justify-center font-display font-bold text-xl">3</div>
-                        <div>
-                            <h4 class="text-xl font-bold text-slate-900 m-0 mb-2">Tuân thủ quy trình làm việc</h4>
-                            <p class="text-sm mt-0">Nhiều người muốn làm nhanh để chứng minh năng lực. Tuy nhiên, tốc độ không thể thay thế quy trình. <em>Làm đúng trước khi làm nhanh.</em></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-16">
-                    <h3 class="text-2xl font-bold text-slate-900 mb-6">2. Nghệ thuật "Hỏi để được Trust"</h3>
-                    <p>Theo chị Nguyễn Hương Dương, điều quan trọng là <strong>bạn hỏi như thế nào.</strong> Chị luôn đánh giá cao những intern "hỏi để hiểu sâu" thay vì im lặng.</p>
-                    
-                    <div class="bg-slate-900 text-white p-8 rounded-3xl mt-8">
-                        <h4 class="text-xl font-bold mb-6 text-white border-b border-white/20 pb-4">Công thức HỎI CHỦ ĐỘNG</h4>
-                        <ol class="list-decimal pl-5 space-y-4 text-sm text-slate-300">
-                            <li><strong class="text-white">Điều đã thử:</strong> Bạn đã làm gì để giải quyết vấn đề?</li>
-                            <li><strong class="text-white">Điểm đang bị kẹt:</strong> Khó khăn cụ thể nằm ở đâu?</li>
-                            <li><strong class="text-white">Hướng suy nghĩ:</strong> Bạn đang nghĩ đến giải pháp nào?</li>
-                            <li><strong class="text-white">Xin góp ý:</strong> Bạn cần sự hỗ trợ ở điểm nào?</li>
-                        </ol>
-                        <div class="mt-8 bg-white/10 p-4 rounded-xl border border-white/20">
-                            <p class="text-sm italic m-0">"Em đã thử cách A và B nhưng đang bị kẹt ở phần C. Hiện tại em đang nghĩ đến hướng D. Chị có thể góp ý giúp em nên tiếp tục theo hướng nào được không ạ?"</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-20 text-center">
-                    <h3 class="text-2xl font-display font-bold text-slate-900 mb-6">Lời nhắn gửi cuối cùng</h3>
-                    <p class="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">"Không biết không phải là vấn đề. Không biết mà không hỏi mới là vấn đề."</p>
-                    <p class="text-slate-500 italic max-w-2xl mx-auto">Bạn không cần phải giỏi ngay từ đầu. Nhưng bạn cần dám lên tiếng để trở nên giỏi hơn mỗi ngày. Người bản lĩnh không phải là người không sợ. Người bản lĩnh là người vẫn lựa chọn tiến về phía trước dù còn sợ.</p>
-                    <div class="mt-10 font-bold text-slate-900 uppercase tracking-widest border-t border-slate-200 pt-8 inline-block">
-                        Dám cất tiếng nói của mình.
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <footer class="py-10 px-6 border-t border-slate-200 text-center">
+        <div
+            class="text-xl font-display font-bold tracking-tight text-slate-900 flex items-center justify-center gap-2 mb-4">
+            <i class="ph ph-book-open text-slate-500"></i>
+            <span>Vượt Ngưỡng.</span>
         </div>
-    </section>
-</main>
+        <p class="text-slate-500 text-xs font-mono tracking-wide uppercase">
+            &copy; 2026 Vượt Ngưỡng. Cẩm Nang Thực Tập.
+        </p>
+    </footer>
 
-<footer class="py-10 px-6 border-t border-slate-200 text-center">
-    <div class="text-xl font-display font-bold tracking-tight text-slate-900 flex items-center justify-center gap-2 mb-4">
-        <i class="ph ph-book-open text-slate-500"></i>
-        <span>Vượt Ngưỡng.</span>
-    </div>
-    <p class="text-slate-500 text-xs font-mono tracking-wide uppercase">
-        &copy; 2026 Vượt Ngưỡng. Cẩm Nang Thực Tập.
-    </p>
-</footer>
-
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
